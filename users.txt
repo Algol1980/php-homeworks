@@ -1,0 +1,7 @@
+name1:pass1:mail1@domain.com
+name7:pass2:mail1@domain.com
+name3:pass3:mail3@domain.com
+name4:pass4:mail7@domain.com
+name5:pass5:mail5@domain.com
+name3:pass6:mail6@domain.com
+name7:pass7:mail7@domain.com
