@@ -76,7 +76,6 @@ function checkComplexity($password)
 if (isset($_POST['task4']) && $_FILES['logFile']['error'] == UPLOAD_ERR_OK) {
     if (is_uploaded_file($_FILES['logFile']['tmp_name'])) {
         $resultIp = lookingForIp($_FILES['logFile']['tmp_name']);
-        var_dump($resultIp);
     }
 }
 ?>
