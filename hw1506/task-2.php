@@ -10,7 +10,7 @@ if (isset($_POST['task2']) && !empty($_POST['text'])) {
     $pattern = '/([:|;]{1}-*(\({1,}|\){1,}|\[{1,}|\]{1,}))/';
     preg_match_all($pattern, $_POST['text'], $matches);
     if (!empty($matches)) {
-        $result = count($matches[1]);
+        $result = 'Смайликов: ' .  count($matches[1]);
     }
     else {
         $result = 'Нет смайликов';
@@ -30,6 +30,6 @@ if (isset($_POST['task2']) && !empty($_POST['text'])) {
     <textarea name="text" id="" cols="30" rows="10"></textarea>
     <input type="submit" name="task2">
 </form>
-<p><?php echo isset($result) ?  'Смайликов: ' . $result : ''; ?></p>
+<p><?php echo isset($result) ?  $result : ''; ?></p>
 </body>
 </html>
