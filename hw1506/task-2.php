@@ -7,7 +7,7 @@
  */
 
 if (isset($_POST['task2']) && !empty($_POST['text'])) {
-    $pattern = '/([:|;]{1}-*(\({1,}|\){1,}|\[{1,}|\]{1,}))/';
+    $pattern = '/([:|;]{1}-*[\(\)\[\]]{1,})/';
     preg_match_all($pattern, $_POST['text'], $matches);
     if (!empty($matches)) {
         $result = 'Смайликов: ' .  count($matches[1]);
