@@ -9,7 +9,7 @@
 
 spl_autoload_register(function ($class) {
     echo 'Trying to load ' . $class . '...';
-    require 'hw2206/' . $class . '.php';
+    require 'hw2906/' . $class . '.php';
 });
 
 
