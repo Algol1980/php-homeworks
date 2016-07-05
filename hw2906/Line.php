@@ -8,8 +8,8 @@
  */
 class Line extends Point
 {
-    private $x2;
-    private $y2;
+    protected $x2;
+    protected $y2;
 
     function __construct($x1, $y1, $x2, $y2)
     {

@@ -7,8 +7,8 @@
  * Time: 1:44
  */
 class Triangle extends Line {
-    private $x3;
-    private $y3;
+    protected $x3;
+    protected $y3;
 
     function __construct($x1, $y1, $x2, $y2, $x3, $y3)
     {

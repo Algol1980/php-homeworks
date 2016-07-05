@@ -9,8 +9,8 @@
 
 class Rectangle extends Triangle {
 
-    private $x4;
-    private $y4;
+    protected $x4;
+    protected $y4;
     function __construct($x1, $y1, $x2, $y2, $x3, $y3, $x4, $y4)
     {
         parent::__construct($x1, $y1, $x2, $y2, $x3, $y3);

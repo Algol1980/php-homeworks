@@ -8,8 +8,8 @@
  */
 class Point
 {
-    private $x1;
-    private $y1;
+    protected $x1;
+    protected $y1;
 
     function __construct($x1, $y1)
     {
